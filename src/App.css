@@ -28,6 +28,7 @@
 
 
 .btn-group .button {
+  font-family: Courier;
   background-color: white;
   border: 1px solid dark grey;
   color: black;
