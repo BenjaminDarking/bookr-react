@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import "./App.css";
 import Header from "./components/header";
+import Main from "./components/main";
 
 class App extends Component {
   state = {
@@ -11,6 +12,7 @@ class App extends Component {
       <div className="App">
         <div className="container">
           <Header />
+          <Main />
 
         </div>
       </div>
