@@ -23,5 +23,52 @@
 
 .headerLogo {
   margin: auto;
-  width: 60%;
+  width: 50%;
+}
+
+
+.btn-group .button {
+  background-color: white;
+  border: 1px solid dark grey;
+  color: black;
+  padding: 5px 50px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  cursor: pointer;
+  float: center;
+}
+
+.btn-group .button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+.btn-group .button:hover {
+  background-color: lightgray;
+}
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
 }
